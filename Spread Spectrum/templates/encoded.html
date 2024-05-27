@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Encoded Image</h1>
+
+<p>Your message has been encoded into the image.</p>
+<form method="POST">
+    <label for="new_image_name">Enter New Image Name:</label>
+    <input type="text" id="new_image_name" name="new_image_name" required>
+    <button type="submit">Download</button>
+</form>
+
+{% endblock %}

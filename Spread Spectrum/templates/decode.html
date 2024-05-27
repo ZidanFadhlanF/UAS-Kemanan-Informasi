@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Decode Message</h1>
+<form method="POST" enctype="multipart/form-data">
+    <label for="carrier">Select Image:</label>
+    <input type="file" id="carrier" name="carrier" required><br>
+    <button type="submit">Decode</button>
+</form>
+{% if decoded_message %}
+<h2>Decoded Message:</h2>
+<p>{{ decoded_message }}</p>
+{% endif %}
+{% endblock %}
